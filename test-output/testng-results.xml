@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="5" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-07T15:29:00 EST" name="Default suite" finished-at="2022-12-07T15:29:27 EST" duration-ms="27303">
+    <groups>
+    </groups>
+    <test started-at="2022-12-07T15:29:00 EST" name="Default test" finished-at="2022-12-07T15:29:27 EST" duration-ms="27303">
+      <class name="tests.EcommSignUpPasswordValidations">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:01 EST" name="setup" finished-at="2022-12-07T15:29:08 EST" duration-ms="7815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="enterInvalidPassword(java.lang.String)[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:08 EST" name="enterInvalidPassword" description="validatin the password field DOESN&#039;T accept values that DOESN&#039;T meet the criteria" data-provider="invalidTestPasswords" finished-at="2022-12-07T15:29:09 EST" duration-ms="342" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrhJ3@e]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at tests.EcommSignUpPasswordValidations.enterInvalidPassword(EcommSignUpPasswordValidations.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInvalidPassword -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:09 EST" name="setup" finished-at="2022-12-07T15:29:10 EST" duration-ms="1039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="enterInvalidPassword(java.lang.String)[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:10 EST" name="enterInvalidPassword" description="validatin the password field DOESN&#039;T accept values that DOESN&#039;T meet the criteria" data-provider="invalidTestPasswords" finished-at="2022-12-07T15:29:10 EST" duration-ms="331" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DFSghdhh]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at tests.EcommSignUpPasswordValidations.enterInvalidPassword(EcommSignUpPasswordValidations.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInvalidPassword -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:10 EST" name="setup" finished-at="2022-12-07T15:29:11 EST" duration-ms="868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="enterInvalidPassword(java.lang.String)[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:11 EST" name="enterInvalidPassword" description="validatin the password field DOESN&#039;T accept values that DOESN&#039;T meet the criteria" data-provider="invalidTestPasswords" finished-at="2022-12-07T15:29:11 EST" duration-ms="331" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DFSghd@tf]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at tests.EcommSignUpPasswordValidations.enterInvalidPassword(EcommSignUpPasswordValidations.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInvalidPassword -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:11 EST" name="setup" finished-at="2022-12-07T15:29:12 EST" duration-ms="943" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="enterInvalidPassword(java.lang.String)[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:12 EST" name="enterInvalidPassword" description="validatin the password field DOESN&#039;T accept values that DOESN&#039;T meet the criteria" data-provider="invalidTestPasswords" finished-at="2022-12-07T15:29:13 EST" duration-ms="332" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[werf12v$^qw]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at tests.EcommSignUpPasswordValidations.enterInvalidPassword(EcommSignUpPasswordValidations.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInvalidPassword -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:13 EST" name="setup" finished-at="2022-12-07T15:29:13 EST" duration-ms="782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="enterInvalidPassword(java.lang.String)[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:13 EST" name="enterInvalidPassword" description="validatin the password field DOESN&#039;T accept values that DOESN&#039;T meet the criteria" data-provider="invalidTestPasswords" finished-at="2022-12-07T15:29:14 EST" duration-ms="300" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DFSghdtf12vv]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at tests.EcommSignUpPasswordValidations.enterInvalidPassword(EcommSignUpPasswordValidations.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInvalidPassword -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:14 EST" name="setup" finished-at="2022-12-07T15:29:15 EST" duration-ms="772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="enterInvalidPassword(java.lang.String)[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:15 EST" name="enterInvalidPassword" description="validatin the password field DOESN&#039;T accept values that DOESN&#039;T meet the criteria" data-provider="invalidTestPasswords" finished-at="2022-12-07T15:29:15 EST" duration-ms="346" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrhJ3@eFR4]13]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at tests.EcommSignUpPasswordValidations.enterInvalidPassword(EcommSignUpPasswordValidations.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInvalidPassword -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:15 EST" name="setup" finished-at="2022-12-07T15:29:16 EST" duration-ms="746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="enterValidPassword(java.lang.String)[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:16 EST" name="enterValidPassword" description="validating the password field accepts values that meet the criteria" data-provider="validTestPasswords" finished-at="2022-12-07T15:29:16 EST" duration-ms="392" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrhJ3@eF]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterValidPassword -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:16 EST" name="setup" finished-at="2022-12-07T15:29:17 EST" duration-ms="761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="enterValidPassword(java.lang.String)[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:17 EST" name="enterValidPassword" description="validating the password field accepts values that meet the criteria" data-provider="validTestPasswords" finished-at="2022-12-07T15:29:17 EST" duration-ms="354" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrhJ3@eFR]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterValidPassword -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:17 EST" name="setup" finished-at="2022-12-07T15:29:18 EST" duration-ms="783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="enterValidPassword(java.lang.String)[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:18 EST" name="enterValidPassword" description="validating the password field accepts values that meet the criteria" data-provider="validTestPasswords" finished-at="2022-12-07T15:29:18 EST" duration-ms="361" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrhJ3@eFR4]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterValidPassword -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:18 EST" name="setup" finished-at="2022-12-07T15:29:19 EST" duration-ms="876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="enterValidPassword(java.lang.String)[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:19 EST" name="enterValidPassword" description="validating the password field accepts values that meet the criteria" data-provider="validTestPasswords" finished-at="2022-12-07T15:29:20 EST" duration-ms="334" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrhJ3@eFR4]f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterValidPassword -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:20 EST" name="setup" finished-at="2022-12-07T15:29:20 EST" duration-ms="914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validatePasswordEncryption()[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:20 EST" name="validatePasswordEncryption" description="validataing the password fields encrypts the value entered by user." finished-at="2022-12-07T15:29:21 EST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePasswordEncryption -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.EcommSignUpPasswordValidations@27dc79f7]" started-at="2022-12-07T15:29:21 EST" name="quitDriver" finished-at="2022-12-07T15:29:27 EST" duration-ms="6883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- tests.EcommSignUpPasswordValidations -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

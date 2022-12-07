@@ -57,8 +57,9 @@ public class EcommSignUpPOM {
 	@FindBy(xpath="//a[text()='Back to login']")
 	public WebElement backToLoginLink;
 	
-	@FindBy(xpath="//span[text()='Sign Up']")
+	@FindBy(xpath="//button[@type= 'submit']")
 	public WebElement signUpBtn;
+	//*******************************
 	
 	//Required Fields Error Messages:
 	@FindBy(xpath="//span[text()='Email is required.']")
@@ -74,6 +75,45 @@ public class EcommSignUpPOM {
 	public WebElement passwordRequiredMsg;
 	
 	
+	
+	//Length and format Error Messages:
+	@FindBy(xpath="//span[text()='The email may not be greater than 125 characters.']")
+	public WebElement EmailCharsLengthError;
+	
+	@FindBy(xpath="//span[text()='Please enter a valid email address.']")
+	public WebElement EmailFormatError;
+	
+	@FindBy(xpath="//span[text()='The firstName may not be greater than 50 characters.']")
+	public WebElement FirstNameCharsLengthError;
+	
+	@FindBy(xpath="//span[text()='The firstName format is invalid.']")
+	public WebElement FirstNameFormatError;
+
+	@FindBy(xpath="//span[text()='The lastName may not be greater than 50 characters.']")
+	public WebElement LastNameCharsLengthError;
+	
+	@FindBy(xpath="//span[text()='The lastName format is invalid.']")
+	public WebElement LastNameFormatError;
+	
+
+	//No Error Messages Displayed:
+	@FindBy(xpath="(//span[@class='invalid-message'])[1]")
+	public WebElement emailErrorMsg;
+	
+	@FindBy(xpath="(//span[@class='invalid-message'])[2]")
+	public WebElement firstNameErrorMsg;
+	
+	@FindBy(xpath="(//span[@class='invalid-message'])[3]")
+	public WebElement lastNameErrorMsg;
+	
+	@FindBy(xpath="(//span[@class='invalid-message'])[4]")
+	public WebElement passwordErrorMsg;
+	
+	
+	
+	
+
+
 
 	
 	
