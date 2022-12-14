@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.EcommSignUpPasswordValidations">
+      <class name="tests.RegisteringExistingUser">
         <methods>
-          <include name="setup"/>
-          <include name="enterInvalidPassword" invocation-numbers="0 1 2 3 4 5"/>
           <include name="quitDriver"/>
+          <include name="setup"/>
+          <include name="registerExisitingUser"/>
         </methods>
-      </class> <!-- tests.EcommSignUpPasswordValidations -->
+      </class> <!-- tests.RegisteringExistingUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

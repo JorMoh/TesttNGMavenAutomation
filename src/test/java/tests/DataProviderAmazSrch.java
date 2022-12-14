@@ -21,7 +21,6 @@ public class DataProviderAmazSrch {
 	public void setup() {
   		Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
   		Driver.getDriver().manage().window().maximize();
-
 	}
 	
 	@AfterMethod

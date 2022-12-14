@@ -109,6 +109,8 @@ public class EcommSignUpPOM {
 	@FindBy(xpath="(//span[@class='invalid-message'])[4]")
 	public WebElement passwordErrorMsg;
 	
+	@FindBy(css=".notifications-wrapper")
+	public WebElement existingUserErrorMsg;
 	
 	
 	
