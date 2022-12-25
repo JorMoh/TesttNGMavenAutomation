@@ -1,51 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="9" passed="5" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-14T03:00:49 EST" name="Default suite" finished-at="2022-12-14T03:00:58 EST" duration-ms="9031">
+  <suite started-at="2022-12-21T19:54:57 EST" name="Default suite" finished-at="2022-12-21T19:55:47 EST" duration-ms="50825">
     <groups>
     </groups>
-    <test started-at="2022-12-14T03:00:49 EST" name="Default test" finished-at="2022-12-14T03:00:58 EST" duration-ms="9031">
-      <class name="tests.RegisteringExistingUser">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegisteringExistingUser@1654a892]" started-at="2022-12-14T03:00:49 EST" name="setup" finished-at="2022-12-14T03:00:50 EST" duration-ms="242" status="PASS">
+    <test started-at="2022-12-21T19:54:57 EST" name="Default test" finished-at="2022-12-21T19:55:47 EST" duration-ms="50825">
+      <class name="tests.EcommSignUpEmailValidations">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:54:57 EST" name="beforeMethod" finished-at="2022-12-21T19:55:16 EST" duration-ms="19219" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="registerExisitingUser()[pri:0, instance:tests.RegisteringExistingUser@1654a892]" started-at="2022-12-14T03:00:50 EST" name="registerExisitingUser" description="validating that a registered user cannot registeragain with the same email" finished-at="2022-12-14T03:00:58 EST" duration-ms="7987" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="enterInvalidFormat(java.lang.String)[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:55:16 EST" name="enterInvalidFormat" description="validating the email field doesn&#039;t accept emails that are not in [string@domain.com] format" data-provider="testEmailsFormat" finished-at="2022-12-21T19:55:17 EST" duration-ms="1127" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[element click intercepted: Element is not clickable at point (190, 648)
-  (Session info: chrome=108.0.5359.99)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MOHAMMAD', ip: '192.168.0.238', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Mohammad\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 59901bcbd670cc00dd25e99a66716095]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (190, 648)
-  (Session info: chrome=108.0.5359.99)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MOHAMMAD', ip: '192.168.0.238', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\Mohammad\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 59901bcbd670cc00dd25e99a66716095
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
-at tests.RegisteringExistingUser.registerExisitingUser(RegisteringExistingUser.java:46)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at tests.EcommSignUpEmailValidations.enterInvalidFormat(EcommSignUpEmailValidations.java:96)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -74,15 +58,267 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registerExisitingUser -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:tests.RegisteringExistingUser@1654a892]" started-at="2022-12-14T03:00:58 EST" name="quitDriver" finished-at="2022-12-14T03:00:58 EST" duration-ms="757" status="PASS">
+        </test-method> <!-- enterInvalidFormat -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:55:17 EST" name="beforeMethod" finished-at="2022-12-21T19:55:19 EST" duration-ms="1905" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- tests.RegisteringExistingUser -->
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="enterInvalidFormat(java.lang.String)[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:55:19 EST" name="enterInvalidFormat" description="validating the email field doesn&#039;t accept emails that are not in [string@domain.com] format" data-provider="testEmailsFormat" finished-at="2022-12-21T19:55:20 EST" duration-ms="858" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jordanmo.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at tests.EcommSignUpEmailValidations.enterInvalidFormat(EcommSignUpEmailValidations.java:96)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInvalidFormat -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:55:20 EST" name="beforeMethod" finished-at="2022-12-21T19:55:21 EST" duration-ms="1578" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="enterInvalidFormat(java.lang.String)[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:55:21 EST" name="enterInvalidFormat" description="validating the email field doesn&#039;t accept emails that are not in [string@domain.com] format" data-provider="testEmailsFormat" finished-at="2022-12-21T19:55:27 EST" duration-ms="5832" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[b@gmail.om]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //span[text()='Please enter a valid email address.']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MOHAMMAD', ip: '172.29.11.77', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221215175817, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 6.3, moz:processID: 2148, moz:profile: C:\Users\Mohammad\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 03785e22-57c9-458d-a6ca-bbab13593e37
+*** Element info: {Using=xpath, value=//span[text()='Please enter a valid email address.']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //span[text()='Please enter a valid email address.']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MOHAMMAD', ip: '172.29.11.77', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221215175817, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 6.3, moz:processID: 2148, moz:profile: C:\Users\Mohammad\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 03785e22-57c9-458d-a6ca-bbab13593e37
+*** Element info: {Using=xpath, value=//span[text()='Please enter a valid email address.']}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+at tests.EcommSignUpEmailValidations.enterInvalidFormat(EcommSignUpEmailValidations.java:96)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInvalidFormat -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:55:27 EST" name="beforeMethod" finished-at="2022-12-21T19:55:29 EST" duration-ms="1703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="enterInvalidLength()[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:55:29 EST" name="enterInvalidLength" description="validating the email field doesn&#039;t accept emails that are greater than 125 characters in length." finished-at="2022-12-21T19:55:30 EST" duration-ms="1005" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at tests.EcommSignUpEmailValidations.enterInvalidLength(EcommSignUpEmailValidations.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterInvalidLength -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:55:30 EST" name="beforeMethod" finished-at="2022-12-21T19:55:32 EST" duration-ms="1691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="enterValidFormat()[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:55:32 EST" name="enterValidFormat" description="validating the email field accepts emails that are in [string@domain.com] format " finished-at="2022-12-21T19:55:32 EST" duration-ms="829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterValidFormat -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:55:32 EST" name="beforeMethod" finished-at="2022-12-21T19:55:34 EST" duration-ms="1405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="enterValidLength(java.lang.String)[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:55:34 EST" name="enterValidLength" description="validating the email field accepts emails that are less or equal to 125 characters in length." data-provider="testEmailsLength" finished-at="2022-12-21T19:55:35 EST" duration-ms="805" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterValidLength -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:55:35 EST" name="beforeMethod" finished-at="2022-12-21T19:55:36 EST" duration-ms="1402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="enterValidLength(java.lang.String)[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:55:36 EST" name="enterValidLength" description="validating the email field accepts emails that are less or equal to 125 characters in length." data-provider="testEmailsLength" finished-at="2022-12-21T19:55:37 EST" duration-ms="849" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ab@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterValidLength -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:55:37 EST" name="beforeMethod" finished-at="2022-12-21T19:55:39 EST" duration-ms="1814" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="enterValidLength(java.lang.String)[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:55:39 EST" name="enterValidLength" description="validating the email field accepts emails that are less or equal to 125 characters in length." data-provider="testEmailsLength" finished-at="2022-12-21T19:55:40 EST" duration-ms="1643" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[fsdfjnskdhsdkjgbgkjdfgjnlkdfjhdkjlbndflkgjsdflkgjhsdkjgbfkjh3465hht7uijkhgdfgdfge223r5wfsrfgyryrhdfgdffskghjfjhgrt@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterValidLength -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:55:40 EST" name="beforeMethod" finished-at="2022-12-21T19:55:44 EST" duration-ms="3292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="enterValidLength(java.lang.String)[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:55:44 EST" name="enterValidLength" description="validating the email field accepts emails that are less or equal to 125 characters in length." data-provider="testEmailsLength" finished-at="2022-12-21T19:55:45 EST" duration-ms="1423" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[fsdfjnskdhsdkjgbgkjdfgjnlkdfjhdkjlbndflkgjsdflkgjhsdkjgbfkjh3465hht7uijkhgdfgdfge223r5wfsrfgyryrhdfgdffskghjfjhgrtd@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterValidLength -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.EcommSignUpEmailValidations@46c00568]" started-at="2022-12-21T19:55:45 EST" name="afterMethod" finished-at="2022-12-21T19:55:47 EST" duration-ms="2381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.EcommSignUpEmailValidations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
