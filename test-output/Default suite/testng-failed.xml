@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.RegisteringExistingUser">
+      <class name="tests.EcommSignUpEmailValidations">
         <methods>
-          <include name="quitDriver"/>
-          <include name="setup"/>
-          <include name="registerExisitingUser"/>
+          <include name="beforeMethod"/>
+          <include name="enterInvalidLength"/>
+          <include name="enterInvalidFormat" invocation-numbers="0 1 2"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- tests.RegisteringExistingUser -->
+      </class> <!-- tests.EcommSignUpEmailValidations -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
